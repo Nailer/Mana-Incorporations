@@ -1,9 +1,9 @@
 'use client';
 
 import Link from "next/link"
-import devCover from "./dev-cover-image.png"
-import companyCover from "./dev-bounty-dev-image.png"
-import Image from "next/image"
+// import devCover from "./dev-cover-image.png"
+// import companyCover from "./dev-bounty-dev-image.png"
+// import Image from "next/image"
 import worldAnimation from "../lotties/Animation - 1748515716182.json"
 import Lottie from "lottie-react";
 import devSetting from "../lotties/Animation - 1748516866244.json"
@@ -11,6 +11,9 @@ import devAnimation from "../lotties/Animation - 1748516317237.json"
 import { ArrowRight, Code, DollarSign, Trophy, Github, Twitter, Linkedin, MailIcon} from "lucide-react"
 
 import { Button } from "../../components/button"
+
+
+export const runtime = "edge";
 
 export default function LandingPage() {
 
@@ -36,8 +39,8 @@ export default function LandingPage() {
   // for the 3D stunt
 
   return (
-    <div className="flex min-h-[100dvh] flex-col mr-10 ml-10">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div className="flex min-h-[100dvh] flex-col mr-[-20px] md:mr-0 ml-0 mr-0 justify-center align-center">
+      <header className="sticky top-0 z-50 mr-[-6.5rem] border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Code className="h-6 w-6" />
@@ -59,12 +62,12 @@ export default function LandingPage() {
           </nav> */}
           <a href="https://mail.google.com/mail/?view=cm&to=ajeemmanuel221@gmail.com&su=General%20Feedback">
             <div className="flex items-center gap-4">
-              <Button>Give Feedback</Button>
+              <Button variant="outline" size="lg" className="sm:p-20 md:p-1 p-1 outline-none md:opacity-[100] opacity-[0]">Give Feedback</Button>
             </div>
           </a>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 ml-0 p-0">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -78,7 +81,7 @@ export default function LandingPage() {
                     with companies offering paid challenges.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-1 min-[400px]:flex-row">
                   <a href="https://mail.google.com/mail/?view=cm&to=ajeemmanuel221@gmail.com&su=General%20Feedback">
 
                     <Button size="lg">
@@ -88,12 +91,12 @@ export default function LandingPage() {
                   </a>
                   <a href="https://mail.google.com/mail/?view=cm&to=ajeemmanuel221@gmail.com&su=General%20Feedback">
                   
-                    <Button size="lg" variant="outline">
+                    <Button className="pr-[10px]" size="lg" variant="outline">
                       Contact Us as Developer
                     </Button>
                   </a>
                 </div>
-                <div className="flex items-center space-x-4 text-sm">
+                <div className="flex items-center space-x-10 text-sm">
                   <div className="flex -space-x-2">
                     {[
                       "https://picsum.photos/200/112",
@@ -109,7 +112,7 @@ export default function LandingPage() {
                       />
                     ))}
                   </div>
-                  <div className="text-muted-foreground">
+                  <div className="text-muted-foreground text-[10px] md:text-sm lg:text-sm pr-[15px]">
                     Join <span className="font-medium text-foreground">many</span> developers already earning
                   </div>
                 </div>
