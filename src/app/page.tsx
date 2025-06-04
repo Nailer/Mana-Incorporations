@@ -40,7 +40,7 @@ export default function LandingPage() {
 
   return (
     <div className="flex min-h-[100dvh] flex-col mr-[-20px] md:mr-0 ml-0 mr-0 justify-center align-center">
-      <header className="sticky top-0 z-50 mr-[-6.5rem] border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 md:mr-5 md:ml-5 mr-[-6.5rem] border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Code className="h-6 w-6" />
@@ -432,8 +432,8 @@ export default function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+      <footer className="border-t py-6 md:py-0 md:mr-5 md:ml-5">
+        <div className="flex flex-col items-center justify-between gap-2 md:h-19 md:flex-row">
           <div className="flex items-center gap-2">
             <Code className="h-6 w-6" />
             <span className="text-lg font-bold">Mana</span>
